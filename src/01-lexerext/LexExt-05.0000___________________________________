@@ -1,0 +1,23 @@
+//  ( § LexGas-04.01-class-LexerGas-open.cci )
+class   LexerGas : public ILexer
+{
+    public:
+    class   Spacer
+    {
+        private:
+        std::string     a_spaces;
+
+        public:
+        const   char    *   cstr()  { return a_spaces.c_str();  }
+
+        void                inc()   { a_spaces.append("  ");    }
+        void                dec()   { a_spaces.erase( 0, 2);    }
+
+        public:
+        Spacer()
+        {
+        }
+        ~Spacer()
+        {
+        }
+    };

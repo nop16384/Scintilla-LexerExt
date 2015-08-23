@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Scintilla-LexerExt" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="src/;src/03-languages/;src/01-lexerext/;src/02-liblexerext/;src/03-languages/gas-arm-generic/;src/03-languages/gas-i386x64/;src/03-languages/gas-i386x64/liblexerext/;src/03-languages/gas-i386x64/properties/;src/03-languages/gas-i386x64/properties/codeblocks/;src/03-languages/gas-i386x64/properties/scite/;src/03-languages/gas-i386x64/liblexerext/flex/;src/03-languages/gas-arm-generic/liblexerext/;src/03-languages/gas-arm-generic/properties/;src/03-languages/gas-arm-generic/properties/codeblocks/;src/03-languages/gas-arm-generic/properties/scite/;others/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="targets/02-scintilla-scite/rel-357/scintilla-scite/bin/SciTE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<ExtraCommands>
+					<Add before="export BUILD_DEBUG=1 ; $(PROJECT_DIR)/build.bash -l -p" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="targets/02-scintilla-scite/rel-357/scintilla-scite/bin/SciTE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<ExtraCommands>
+					<Add before="export BUILD_DEBUG=0 ; $(PROJECT_DIR)/build.bash -l -p" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="chmod u=rwx $(PROJECT_DIR)/build.bash" />
+		</ExtraCommands>
+		<Unit filename="build-includes.bash">
+			<Option virtualFolder="others/" />
+		</Unit>
+		<Unit filename="build.bash">
+			<Option virtualFolder="others/" />
+		</Unit>
+		<Unit filename="languages.txt">
+			<Option virtualFolder="others/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-00.0001.001-header.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-01.0001.001-pre.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-02.0001.001-options.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-03.0001.001-utils.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-03.0001.010-liblexergas-iface.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0000___________________________________">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0001.001-class-LexerGas-in--open.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0001.010-spacer.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0001.020-word-list-pack.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0001.030.liblexergas.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0001.050-ocode.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0001.060-decl-cst.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0001.090.dl-loader.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0001.999-class-LexerGas-in--close.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0005.010-CLG-out--cdtor.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.0005.020-CLG-out--set.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-04.05.0000___________________________________">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-05.0001.001-CLG-out--lex.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-06.0001.010-CLG-out--fold.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt-07.0001.020-CLG-out--post.hhi">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/LexExt.cxx">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/build.bash">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/gas-2.9.1-directives.txt">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/01-lexerext/todo.txt">
+			<Option virtualFolder="src/01-lexerext/" />
+		</Unit>
+		<Unit filename="src/02-liblexerext/liblexerext-iface.hhi">
+			<Option virtualFolder="src/02-liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/build.bash">
+			<Option virtualFolder="src/03-languages/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-arm-generic/liblexerext/build.bash">
+			<Option virtualFolder="src/03-languages/gas-arm-generic/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/build.bash">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-01-definitions.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-02-precode.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-03-expressions.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.00-rules.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.05-rules-initial.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.10-rules-etiquette.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.15-rules-directive.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.20-rules-instruction.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.75-rules-comment-sl.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.77-rules-comment-ml.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.80-rules-string.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.90-rules-newline.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.95-rules-error.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-04.99-rules.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64-05-postcode.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/gas-i386x64.flex">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/flex/todo.txt">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/flex/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/liblexerext-common.hh">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/liblexerext-dico-tree.cc">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/liblexerext-dico-tree.hh">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/liblexerext-flex.cc">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/liblexerext-flex.hh">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/liblexerext-lexer.cc">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/liblexerext-lexer.hh">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/liblexerext.cc">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/liblexerext/liblexerext.hh">
+			<Option virtualFolder="src/03-languages/gas-i386x64/liblexerext/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/codeblocks/build.bash">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/codeblocks/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/codeblocks/gas-i386x64-01-intro.xml">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/codeblocks/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/codeblocks/gas-i386x64-02-styles.xml">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/codeblocks/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/codeblocks/gas-i386x64-03-keywords.xml">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/codeblocks/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/codeblocks/gas-i386x64-04-sample.xml">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/codeblocks/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/codeblocks/gas-i386x64-05-attributes.xml">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/codeblocks/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/codeblocks/gas-i386x64-09-end.xml">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/codeblocks/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/codeblocks/lexer_ext__gas_i386x64.sample">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/codeblocks/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/codeblocks/lexer_ext__gas_i386x64.xml">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/codeblocks/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/gas-i386x64-properties-colors-D.include.bash">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/gas-i386x64-properties-colors-N.include.bash">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/gas-i386x64-properties-colors-R.include.bash">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/scite/build.bash">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/scite/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/scite/ext__gas_i386x64.properties">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/scite/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/scite/gas-i386x64-directives.properties">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/scite/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/scite/gas-i386x64-header.properties">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/scite/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/scite/gas-i386x64-keywords.properties">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/scite/" />
+		</Unit>
+		<Unit filename="src/03-languages/gas-i386x64/properties/scite/gas-i386x64-kpa.properties">
+			<Option virtualFolder="src/03-languages/gas-i386x64/properties/scite/" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

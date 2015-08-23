@@ -1,0 +1,34 @@
+================================================================================
+2015.07.15
+================================================================================
+    (001)   Implements comments
++   (002)   Multiline strings constants?
++   (003)   Flex rules optimizations
++   (004)   Differentiate instruction from symbols in STATE_INSTRUCTION
++   (005)   Expression state
++   (006)   Implements folding strings colourization
+    (007)   Chrono flex time
++   (008)   In ::parsing, add a verification test when adding tokens.
+            - If mismatch between tok(n) and tok(n+1), colourize all the rest
+              in specific color. This will avoid segfaults.
+            - same if colourization does not start or end at the good offsets
+    (009)   Dont copy the EOF char from scintilla in the flex buffer, it
+            is not related to the EOF char from flex.
++   (010)   Reenable folding !
+    (011)   Implements correctly the tokens end for colourization
+================================================================================
+2015.07.16
+================================================================================
+=   (012)   Implemented token counter in the shared library
+-   (011)
+-   (009)   Copy the EOF char, see code note
+w   (001)   State implemented, added in STATE_INSTRUCTION and STATE_INITIAL
+================================================================================
+2015.07.17
+================================================================================
+-   (007)
+================================================================================
+2015.07.18
+================================================================================
+-   (001)   State implemented, added in STATE_INSTRUCTION and STATE_INITIAL
+            with memorization of old state, and flags for lines

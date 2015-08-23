@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="src/03-languages/gas-i386x64/liblexerext/build.bash" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2410" topLine="44" />
+		</Cursor>
+	</File>
+	<File name="src/03-languages/gas-i386x64/properties/scite/build.bash" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2467" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="src/01-lexerext/LexExt-04.0001.030.liblexergas.hhi" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="754" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/01-lexerext/LexExt-04.0005.020-CLG-out--set.hhi" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="501" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/03-languages/gas-i386x64/properties/codeblocks/gas-i386x64-01-intro.xml" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="134" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/03-languages/gas-i386x64/properties/codeblocks/build.bash" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1694" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="build.bash" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1970" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="src/01-lexerext/build.bash" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="459" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/03-languages/build.bash" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2068" topLine="19" />
+		</Cursor>
+	</File>
+	<File name="src/01-lexerext/LexExt.cxx" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="49112" topLine="1190" />
+		</Cursor>
+	</File>
+	<File name="src/01-lexerext/LexExt-05.0001.001-CLG-out--lex.hhi" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4849" topLine="79" />
+		</Cursor>
+	</File>
+	<File name="build-includes.bash" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="906" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="9" />
+			<Collapse line="15" />
+			<Collapse line="59" />
+			<Collapse line="76" />
+			<Collapse line="91" />
+			<Collapse line="105" />
+			<Collapse line="130" />
+			<Collapse line="160" />
+			<Collapse line="177" />
+			<Collapse line="206" />
+			<Collapse line="255" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="05e6ee2055d97cae002c5fb800000002=0;gwr.codeblocks:src/gwr.OpenFilesList/nm-files/mod/openfileslistplugin.cpp,*1;gwr.codeblocks:src/gwr.OpenFilesList/todo.h,2;gwr.codeblocks:src/gwr.OpenFilesList/nm-files/new/openfileslistpluginpanel.h,3;gwr.codeblocks:src/gwr.Logger/nm-files/new/gwrlogger.h,4;gwr.codeblocks:src/gwr.OpenFilesList/nm-files/mod/openfileslistplugin.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=391;besth=281;minw=391;minh=281;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=05e6ee2055d97cae002c5fb800000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>

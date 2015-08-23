@@ -1,0 +1,13 @@
+                <LanguageAttributes
+                    LineComment="#"
+                    StreamCommentStart=""
+                    StreamCommentEnd=""
+                    BoxCommentStart=""
+                    BoxCommentMid=""
+                    BoxCommentEnd=""
+                    CaseSensitive="1"
+                    LexerCommentStyles="3,4,5,6"
+                    LexerCharacterStyles="12"
+                    LexerStringStyles="3,13"
+                    LexerPreprocessorStyles=""/>
+

@@ -1,0 +1,7 @@
+img/*
+legacy/*
+obj/*
+samples/*
+
+*.backup
+*.bak

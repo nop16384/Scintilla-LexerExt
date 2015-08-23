@@ -1,0 +1,25 @@
+<Style name="Default"						index="0"		fg="0,0,0"		bg="255,255,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Label gas"						index="1"		fg="0,0,0"		bg="173,173,173"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Label usr"						index="2"		fg="0,0,0"		bg="173,173,173"		bold="1"		italics="0"		underlined="0"	/>
+<Style name="Directive"						index="3"		fg="0,0,0"		bg="51,255,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Directive token"						index="4"		fg="0,0,0"		bg="34,170,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Instruction : generic"						index="5"		fg="0,0,0"		bg="178,221,235"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Instruction : prefix"						index="6"		fg="119,119,119"		bg="178,221,235"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Instruction : suffix"						index="7"		fg="119,119,119"		bg="178,221,235"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Instruction : CPU"						index="8"		fg="0,0,0"		bg="178,221,235"		bold="1"		italics="0"		underlined="0"	/>
+<Style name="Instruction : FPU"						index="9"		fg="161,100,18"		bg="178,221,235"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Instruction : EXT"						index="10"		fg="227,61,163"		bg="178,221,235"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Operand : scalar"						index="15"		fg="0,0,0"		bg="0,204,153"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Operand : scalar offset"						index="16"		fg="0,0,0"		bg="0,204,153"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Operand : register"						index="17"		fg="0,0,0"		bg="0,204,153"		bold="1"		italics="0"		underlined="0"	/>
+<Style name="Operand : immediate"						index="18"		fg="0,0,0"		bg="255,161,82"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Operand : symbol"						index="19"		fg="0,0,0"		bg="230,230,101"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="String"						index="20"		fg="0,0,0"		bg="209,155,100"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="String (esc char)"						index="21"		fg="255,255,255"		bg="209,155,100"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Comment : 1"						index="24"		fg="119,119,119"		bg="255,255,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Comment : 2"						index="25"		fg="0,120,0"		bg="255,255,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Comment : 3"						index="26"		fg="171,168,0"		bg="255,255,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Reverse"						index="28"		fg="255,255,255"		bg="173,173,173"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Nimpl"						index="29"		fg="0,0,0"		bg="204,0,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="SynError - uncolorized"						index="30"		fg="0,0,0"		bg="255,153,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="SynError"						index="31"		fg="0,0,0"		bg="255,0,0"		bold="0"		italics="0"		underlined="0"	/>

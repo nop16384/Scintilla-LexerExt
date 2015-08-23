@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_lexer_properties>
+<CodeBlocks_lexer_properties>
+        <Lexer name="Gnu assembly - arm (generic)"
+                index="_?_index_?_"
+                filemasks="*.s-arm">
+
+<Style name="Default"						index="0"		fg="0,0,0"		bg="255,255,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Label gas"						index="1"		fg="0,0,0"		bg="173,173,173"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Label usr"						index="2"		fg="0,0,0"		bg="173,173,173"		bold="1"		italics="0"		underlined="0"	/>
+<Style name="Directive"						index="3"		fg="0,0,0"		bg="51,255,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Directive token"						index="4"		fg="0,0,0"		bg="34,170,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Instruction : generic"						index="5"		fg="0,0,0"		bg="178,221,235"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Instruction : prefix"						index="6"		fg="119,119,119"		bg="178,221,235"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Instruction : suffix"						index="7"		fg="119,119,119"		bg="178,221,235"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Instruction : CPU"						index="8"		fg="0,0,0"		bg="178,221,235"		bold="1"		italics="0"		underlined="0"	/>
+<Style name="Instruction : FPU"						index="9"		fg="161,100,18"		bg="178,221,235"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Instruction : EXT"						index="10"		fg="227,61,163"		bg="178,221,235"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Operand : scalar"						index="15"		fg="0,0,0"		bg="0,204,153"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Operand : scalar offset"						index="16"		fg="0,0,0"		bg="0,204,153"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Operand : register"						index="17"		fg="0,0,0"		bg="0,204,153"		bold="1"		italics="0"		underlined="0"	/>
+<Style name="Operand : immediate"						index="18"		fg="0,0,0"		bg="255,161,82"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Operand : symbol"						index="19"		fg="0,0,0"		bg="230,230,101"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="String"						index="20"		fg="0,0,0"		bg="209,155,100"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="String (esc char)"						index="21"		fg="255,255,255"		bg="209,155,100"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Comment : 1"						index="24"		fg="119,119,119"		bg="255,255,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Comment : 2"						index="25"		fg="0,120,0"		bg="255,255,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Comment : 3"						index="26"		fg="171,168,0"		bg="255,255,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Reverse"						index="28"		fg="255,255,255"		bg="173,173,173"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="Nimpl"						index="29"		fg="0,0,0"		bg="204,0,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="SynError - uncolorized"						index="30"		fg="0,0,0"		bg="255,153,255"		bold="0"		italics="0"		underlined="0"	/>
+<Style name="SynError"						index="31"		fg="0,0,0"		bg="255,0,0"		bold="0"		italics="0"		underlined="0"	/>
+                <Keywords>
+						<!-- CPU instruction set -->
+						<Set index="0" value="adc add addpd addps addsd addss addsubpd addsubps and andnpd andnps andpd andps blendpd
+							blendps bsf bsr bswap bt btc btr bts call ret callf cbw cwde cdqe clc cld clflush cli clts
+							cmc cmovb cmovnae cmovc cmovbe cmovna cmovl cmovnge cmovle cmovng cmovnb cmovae cmovnc
+							cmovnbe cmova cmovnl cmovge cmovnle cmovg cmovno cmovnp cmovpo cmovns cmovnz cmovne cmovo
+							cmovp cmovpe cmovs cmovz cmove cmp cmppd cmpps cmps cmpsb cmpsw cmpsd cmpsq cmpss cmpxchg
+							cmpxchg8b cmpxchg16b comisd comiss cpuid crc32 cvtdq2pd cvtdq2ps cvtpd2dq cvtpd2pi cvtpd2ps
+							cvtpi2pd cvtpi2ps cvtps2dq cvtps2pd cvtps2pi cvtsd2si cvtsd2ss cvtsi2sd cvtsi2ss cvtss2sd
+							cvtss2si cvttpd2dq cvttpd2pi cvttps2dq cvttps2pi cvttsd2si cvttss2si cwd cdq cqo dec div
+							divpd divps divsd divss dppd dpps emms enter extractps f2xm1 fabs fadd faddp fbld fbstp
+							fchs fclex fcmovb fcmovbe fcmove fcmovnb fcmovnbe fcmovne fcmovnu fcmovu fcom fcom2 fcomi
+							fcomip fcomp fcomp3 fcomp5 fcompp fcos fdecstp fdiv fdivp fdivr fdivrp ffree ffreep fiadd
+							ficom ficomp fidiv fidivr fild fimul fincstp finit fist fistp fisttp fisub fisubr fld fld1
+							fldcw fldenv fldl2e fldl2t fldlg2 fldln2 fldpi fldz fmul fmulp fnclex fndisi fneni fninit
+							fnop fnsave fnsetpm fnstcw fnstenv fnstsw fpatan fprem fprem1 fptan frndint frstor fs fsave
+							fscale fsin fsincos fsqrt fst fstcw fstenv fstp fstp1 fstp8 fstp9 fstsw fsub fsubp fsubr
+							fsubrp ftst fucom fucomi fucomip fucomp fucompp fwait wait fxam fxch fxch4 fxch7 fxrstor
+							fxsave fxtract fyl2x fyl2xp1 getsec gs haddpd haddps hint_nop hlt hsubpd hsubps idiv imul
+							in inc ins insb insw insd insertps int int1 icebp into invd invept invlpg invvpid iret
+							iretd iretq jb jnae jc jbe jna jecxz jrcxz jl jnge jle jng jmp jmpf jnb jae jnc jnbe ja
+							jnl jge jnle jg jno jnp jpo jns jnz jne jo jp jpe js jz je lahf lar lddqu ldmxcsr lea
+							leave lfence lfs lgdt lgs lidt lldt lmsw lock lods lodsb lodsw lodsd lodsq loop loopnz
+							loopne loopz loope lsl lss ltr maskmovdqu maskmovq maxpd maxps maxsd maxss mfence minpd
+							minps minsd minss monitor mov movapd movaps movbe movd movq movddup movdq2q movdqa movdqu
+							movhlps movhpd movhps movlhps movlpd movlps movmskpd movmskps movntdq movnti movntpd movntps
+							movntq movq2dq movs movsb movsw movsd movsq movshdup movsldup movss movsx movsxd movupd
+							movups movzx mpsadbw mul mulpd mulps mulsd mulss mwait neg nop not or orpd orps out outs
+							outsb outsw outsd packssdw packsswb packuswb paddb paddd paddq paddsb paddsw paddusb
+							paddusw paddw palignr pand pandn pause pavgb pavgw pblendw pcmpeqb pcmpeqd pcmpeqw
+							pcmpestri pcmpestrm pcmpgtb pcmpgtd pcmpgtw pcmpistri pcmpistrm pextrb pextrd pextrq
+							pextrw pinsrb pinsrd pinsrq pinsrw pmaddwd pmaxsw pmaxub pminsw pminub pmovmskb pmulhuw
+							pmulhw pmullw pmuludq pop popcnt popf popfq por prefetchnta prefetcht0 prefetcht1
+							prefetcht2 psadbw pshufd pshufhw pshuflw pshufw pslld pslldq psllq psllw psrad psraw psrld
+							psrldq psrlq psrlw psubb psubd psubq psubsb psubsw psubusb psubusw psubw punpckhbw
+							punpckhdq punpckhqdq punpckhwd punpcklbw punpckldq punpcklqdq punpcklwd push pushf pushfq
+							pxor rcl rcpps rcpss rcr rdmsr rdpmc rdtsc rdtscp rep repnz repne repz repe retf retn rex
+							rex.b rex.r rex.rb rex.rx rex.rxb rex.w rex.wb rex.wr rex.wrb rex.wrx rex.wrxb rex.wx
+							rex.wxb rex.x rex.xb rol ror roundpd roundps roundsd roundss rsm rsqrtps rsqrtss sahf
+							sal shl sar sbb scas scasb scasw scasd scasq setb setnae setc setbe setna setl setnge
+							setle setng setnb setae setnc setnbe seta setnl setge setnle setg setno setnp setpo
+							setns setnz setne seto setp setpe sets setz sete sfence sgdt shld shr shrd shufpd
+							shufps sidt sldt smsw sqrtpd sqrtps sqrtsd sqrtss stc std sti stmxcsr stos stosb
+							stosw stosd stosq str sub subpd subps subsd subss swapgs syscall sysenter sysexit
+							sysret test ucomisd ucomiss ud ud2 unpckhpd unpckhps unpcklpd unpcklps verr verw
+							vmcall vmclear vmlaunch vmptrld vmptrst vmread vmresume vmwrite vmxoff vmxon wbinvd
+							wrmsr xadd xchg xgetbv xlat xlatb xor xorpd xorps xrstor xsave xsetbv"/>
+						<!-- Floating point unit instructions -->
+						<Set index="1" value="f2xm1 fabs fadd faddp fbld fbstp fchs fclex fcom fcomp fcompp fdecstp
+                            fdisi fdiv fdivp fdivr fdivrp feni ffree fiadd ficom ficomp fidiv
+                            fidivr fild fimul fincstp finit fist fistp fisub fisubr fld fld1
+                            fldcw fldenv fldenvw fldl2e fldl2t fldlg2 fldln2 fldpi fldz fmul
+                            fmulp fnclex fndisi fneni fninit fnop fnsave fnsavew fnstcw fnstenv
+                            fnstenvw fnstsw fpatan fprem fptan frndint frstor frstorw fsave
+                            fsavew fscale fsqrt fst fstcw fstenv fstenvw fstp fstsw fsub fsubp
+                            fsubr fsubrp ftst fwait fxam fxch fxtract fyl2x fyl2xp1
+                            fsetpm fcos fldenvd fnsaved fnstenvd fprem1 frstord fsaved fsin fsincos
+                            fstenvd fucom fucomp fucompp fcomi fcomip fucomi fucomip ffreep
+                            fcmovb fcmove fcmovbe fcmovu fcmovnb fcmovne fcmovnbe fcmovnu"/>
+						<!-- Registers -->
+						<Set index="2" value="r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 sp lr pc apsr" />
+						<!--  -->
+						<Set index="3" value="set3"/>
+						<!-- Directive operands -->
+						<Set index="4" value="set4"/>
+						<!-- Extended instruction set -->
+						<Set index="5" value="set5"/>
+						<Set index="6" value="set6"/>
+						<Set index="7" value="set7"/>
+                        <!-- Directives -->
+						<Set index="8" value="
+                            .abort .ABORT .align .app-file .ascii .asciz .balignw .balignl .byte .comm .data
+                            .def .desc .dim .double .eject .else .endef .endif .endm .equ .equiv .err .extern .file .string
+                            .fill repeat .float .global .globl .hword .ident .if .include .int .irp .irpc .lcomm .lflags .line
+                            .linkonce .ln .mri .list .long .macro .nolist .octa .org .p2align .p2alignw .p2alignl .psize .quad
+                            .rept .sbttl .scl .section .set .short .single .size .sleb128 .skip .space .stabd .stabn
+                            .stabs .string .symver .tag .text .title .type .val .uleb128 .word"/>
+                </Keywords>
+
+                <SampleCode value="lexer_gas.sample"/>
+
+                <LanguageAttributes
+                    LineComment="#"
+                    StreamCommentStart=""
+                    StreamCommentEnd=""
+                    BoxCommentStart=""
+                    BoxCommentMid=""
+                    BoxCommentEnd=""
+                    CaseSensitive="1"
+                    LexerCommentStyles="3,4,5,6"
+                    LexerCharacterStyles="12"
+                    LexerStringStyles="3,13"
+                    LexerPreprocessorStyles=""/>
+
+        </Lexer>
+</CodeBlocks_lexer_properties>

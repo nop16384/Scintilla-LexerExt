@@ -1,0 +1,7 @@
+(001)   2015.08.11  Define one .properties file per language for scintilla-scite
+        or make symlinks in /usr/share/scite to one big file, so scintilla
+        uses the good LexerModule
+(002)   2015.08.11  Find a way to have one LexerModule for all ext languages
+================================================================================
+20xx.yy.zz
+================================================================================

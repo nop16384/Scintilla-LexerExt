@@ -1,0 +1,3 @@
+gas-i386x64
+gas-arm-generic
+

@@ -1,0 +1,94 @@
+                <Keywords>
+						<!-- CPU instruction set -->
+						<Set index="0" value="adc add addpd addps addsd addss addsubpd addsubps and andnpd andnps andpd andps blendpd
+							blendps bsf bsr bswap bt btc btr bts call ret callf cbw cwde cdqe clc cld clflush cli clts
+							cmc cmovb cmovnae cmovc cmovbe cmovna cmovl cmovnge cmovle cmovng cmovnb cmovae cmovnc
+							cmovnbe cmova cmovnl cmovge cmovnle cmovg cmovno cmovnp cmovpo cmovns cmovnz cmovne cmovo
+							cmovp cmovpe cmovs cmovz cmove cmp cmppd cmpps cmps cmpsb cmpsw cmpsd cmpsq cmpss cmpxchg
+							cmpxchg8b cmpxchg16b comisd comiss cpuid crc32 cvtdq2pd cvtdq2ps cvtpd2dq cvtpd2pi cvtpd2ps
+							cvtpi2pd cvtpi2ps cvtps2dq cvtps2pd cvtps2pi cvtsd2si cvtsd2ss cvtsi2sd cvtsi2ss cvtss2sd
+							cvtss2si cvttpd2dq cvttpd2pi cvttps2dq cvttps2pi cvttsd2si cvttss2si cwd cdq cqo dec div
+							divpd divps divsd divss dppd dpps emms enter extractps f2xm1 fabs fadd faddp fbld fbstp
+							fchs fclex fcmovb fcmovbe fcmove fcmovnb fcmovnbe fcmovne fcmovnu fcmovu fcom fcom2 fcomi
+							fcomip fcomp fcomp3 fcomp5 fcompp fcos fdecstp fdiv fdivp fdivr fdivrp ffree ffreep fiadd
+							ficom ficomp fidiv fidivr fild fimul fincstp finit fist fistp fisttp fisub fisubr fld fld1
+							fldcw fldenv fldl2e fldl2t fldlg2 fldln2 fldpi fldz fmul fmulp fnclex fndisi fneni fninit
+							fnop fnsave fnsetpm fnstcw fnstenv fnstsw fpatan fprem fprem1 fptan frndint frstor fs fsave
+							fscale fsin fsincos fsqrt fst fstcw fstenv fstp fstp1 fstp8 fstp9 fstsw fsub fsubp fsubr
+							fsubrp ftst fucom fucomi fucomip fucomp fucompp fwait wait fxam fxch fxch4 fxch7 fxrstor
+							fxsave fxtract fyl2x fyl2xp1 getsec gs haddpd haddps hint_nop hlt hsubpd hsubps idiv imul
+							in inc ins insb insw insd insertps int int1 icebp into invd invept invlpg invvpid iret
+							iretd iretq jb jnae jc jbe jna jecxz jrcxz jl jnge jle jng jmp jmpf jnb jae jnc jnbe ja
+							jnl jge jnle jg jno jnp jpo jns jnz jne jo jp jpe js jz je lahf lar lddqu ldmxcsr lea
+							leave lfence lfs lgdt lgs lidt lldt lmsw lock lods lodsb lodsw lodsd lodsq loop loopnz
+							loopne loopz loope lsl lss ltr maskmovdqu maskmovq maxpd maxps maxsd maxss mfence minpd
+							minps minsd minss monitor mov movapd movaps movbe movd movq movddup movdq2q movdqa movdqu
+							movhlps movhpd movhps movlhps movlpd movlps movmskpd movmskps movntdq movnti movntpd movntps
+							movntq movq2dq movs movsb movsw movsd movsq movshdup movsldup movss movsx movsxd movupd
+							movups movzx mpsadbw mul mulpd mulps mulsd mulss mwait neg nop not or orpd orps out outs
+							outsb outsw outsd packssdw packsswb packuswb paddb paddd paddq paddsb paddsw paddusb
+							paddusw paddw palignr pand pandn pause pavgb pavgw pblendw pcmpeqb pcmpeqd pcmpeqw
+							pcmpestri pcmpestrm pcmpgtb pcmpgtd pcmpgtw pcmpistri pcmpistrm pextrb pextrd pextrq
+							pextrw pinsrb pinsrd pinsrq pinsrw pmaddwd pmaxsw pmaxub pminsw pminub pmovmskb pmulhuw
+							pmulhw pmullw pmuludq pop popcnt popf popfq por prefetchnta prefetcht0 prefetcht1
+							prefetcht2 psadbw pshufd pshufhw pshuflw pshufw pslld pslldq psllq psllw psrad psraw psrld
+							psrldq psrlq psrlw psubb psubd psubq psubsb psubsw psubusb psubusw psubw punpckhbw
+							punpckhdq punpckhqdq punpckhwd punpcklbw punpckldq punpcklqdq punpcklwd push pushf pushfq
+							pxor rcl rcpps rcpss rcr rdmsr rdpmc rdtsc rdtscp rep repnz repne repz repe retf retn rex
+							rex.b rex.r rex.rb rex.rx rex.rxb rex.w rex.wb rex.wr rex.wrb rex.wrx rex.wrxb rex.wx
+							rex.wxb rex.x rex.xb rol ror roundpd roundps roundsd roundss rsm rsqrtps rsqrtss sahf
+							sal shl sar sbb scas scasb scasw scasd scasq setb setnae setc setbe setna setl setnge
+							setle setng setnb setae setnc setnbe seta setnl setge setnle setg setno setnp setpo
+							setns setnz setne seto setp setpe sets setz sete sfence sgdt shld shr shrd shufpd
+							shufps sidt sldt smsw sqrtpd sqrtps sqrtsd sqrtss stc std sti stmxcsr stos stosb
+							stosw stosd stosq str sub subpd subps subsd subss swapgs syscall sysenter sysexit
+							sysret test ucomisd ucomiss ud ud2 unpckhpd unpckhps unpcklpd unpcklps verr verw
+							vmcall vmclear vmlaunch vmptrld vmptrst vmread vmresume vmwrite vmxoff vmxon wbinvd
+							wrmsr xadd xchg xgetbv xlat xlatb xor xorpd xorps xrstor xsave xsetbv"/>
+						<!-- Floating point unit instructions -->
+						<Set index="1" value="f2xm1 fabs fadd faddp fbld fbstp fchs fclex fcom fcomp fcompp fdecstp
+                            fdisi fdiv fdivp fdivr fdivrp feni ffree fiadd ficom ficomp fidiv
+                            fidivr fild fimul fincstp finit fist fistp fisub fisubr fld fld1
+                            fldcw fldenv fldenvw fldl2e fldl2t fldlg2 fldln2 fldpi fldz fmul
+                            fmulp fnclex fndisi fneni fninit fnop fnsave fnsavew fnstcw fnstenv
+                            fnstenvw fnstsw fpatan fprem fptan frndint frstor frstorw fsave
+                            fsavew fscale fsqrt fst fstcw fstenv fstenvw fstp fstsw fsub fsubp
+                            fsubr fsubrp ftst fwait fxam fxch fxtract fyl2x fyl2xp1
+                            fsetpm fcos fldenvd fnsaved fnstenvd fprem1 frstord fsaved fsin fsincos
+                            fstenvd fucom fucomp fucompp fcomi fcomip fucomi fucomip ffreep
+                            fcmovb fcmove fcmovbe fcmovu fcmovnb fcmovne fcmovnbe fcmovnu"/>
+						<!-- Registers -->
+						<Set index="2" value="al ah bl bh cl ch dl dh
+                            ax bx cx dx si di bp
+                            eax ebx ecx edx esi edi ebx esp
+                            st0 st1 st2 st3 st4 st5 st6 st7
+                            mm0 mm1 mm2 mm3 mm4 mm5 mm6 mm7
+                            xmm0 xmm1 xmm2 xmm3 xmm4 xmm5 xmm6 xmm7
+                            ymm0 ymm1 ymm2 ymm3 ymm4 ymm5 ymm6 ymm7
+                            fs
+                            sil dil bpl
+                            r8b r9b r10b r11b r12b r13b r14b r15b
+                            r8w r9w r10w r11w r12w r13w r14w r15w
+                            rax rcx rdx rbx rsp rbp rsi rdi
+                            r8 r9 r10 r11 r12 r13 r14 r15
+                            xmm8 xmm9 xmm10 xmm11 xmm12 xmm13 xmm14 xmm15
+                            ymm8 ymm9 ymm10 ymm11 ymm12 ymm13 ymm14 ymm15
+                            gs" />
+						<!--  -->
+						<Set index="3" value="set3"/>
+						<!-- Directive operands -->
+						<Set index="4" value="set4"/>
+						<!-- Extended instruction set -->
+						<Set index="5" value="set5"/>
+						<Set index="6" value="set6"/>
+						<Set index="7" value="set7"/>
+                        <!-- Directives -->
+						<Set index="8" value="
+                            .abort .ABORT .align .app-file .ascii .asciz .balignw .balignl .byte .comm .data
+                            .def .desc .dim .double .eject .else .endef .endif .endm .equ .equiv .err .extern .file .string
+                            .fill repeat .float .global .globl .hword .ident .if .include .int .irp .irpc .lcomm .lflags .line
+                            .linkonce .ln .mri .list .long .macro .nolist .octa .org .p2align .p2alignw .p2alignl .psize .quad
+                            .rept .sbttl .scl .section .set .short .single .size .sleb128 .skip .space .stabd .stabn
+                            .stabs .string .symver .tag .text .title .type .val .uleb128 .word"/>
+                </Keywords>
+

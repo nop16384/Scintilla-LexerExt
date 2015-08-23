@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_lexer_properties>
+<CodeBlocks_lexer_properties>
+        <Lexer name="Gnu assembly - i386x64"
+                index="_?_index_?_"
+                externel-lexer-library="ext__gas_i386x64"
+                filemasks="*.s-i386">
+

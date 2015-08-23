@@ -1,0 +1,71 @@
+    .file	"dummy-test.c"
+
+    /*  stream comment */
+    #   block comment 1
+    ##  block comment 2
+    ### block comment 3
+
+    #   ........................................................................
+    #.globl	Bytes
+    .data
+    .align  16
+    #.type	Bytes, @object
+    #.size	Bytes, 16
+.gwr_bths_chars:
+    .byte	'0', '1', '2', '3', '4', '5', '6', '7'
+    .byte	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'
+    ##	========================================================================
+    ##	\fn		ASM_byte_to_hex_str
+    ##
+    ##	\brief	Convert in hex format a byte value.
+    ##
+    ##	\param	rdi.b	The byte to convert
+    ##	========================================================================
+    .text
+    .globl	ASM_byte_to_hex_str
+    #.type	ASM_byte_to_hex_str, @function
+ASM_byte_to_hex_str:                                                        #>>
+    #   ........................................................................
+    pushq	%rbp
+    movq	%rsp, %rbp
+
+    pushq   %rax
+    pushq   %rbx
+    pushq   %rcx
+    pushq   %rsi
+    #   ........................................................................
+    movb    %dil            , %al
+    movb    %dil            , %bl
+
+    lea     .gwr_bths_chars , %rsi
+    lea     Gwr_bths_result , %rdi
+
+    andq    $0xf0           , %rax
+    shr     $4              , %al
+    andq    $0x0f           , %rbx
+
+    movb    (%esi, %eax,)   , %cl           #   inverted, endianness
+    movb    (%esi, %ebx,)   , %ch           #   inverted, endianness
+
+    movw    %cx             , (%edi)
+    #   ........................................................................
+    popq    %rsi
+    popq    %rcx
+    popq    %rbx
+    popq    %rax
+
+    popq	%rbp
+
+    ret
+.LFE0:
+    .size	ASM_byte_to_hex_str, .-ASM_byte_to_hex_str                      #<<
+    
+
+.section	.rodata.str1.8,"aMS",@progbits,1
+	.align 8
+	.string	"Block24:[%p] mem[%p] siz[%06i] usd[%06i] ava[%06i]\n"
+
+    #.section	.eh_frame,"a",@progbits         # ?
+    #	########################################################################
+    .ident	"GCC: (Debian 4.7.2-5) 4.7.2"
+    .section	.note.GNU-stack,"",@progbits
